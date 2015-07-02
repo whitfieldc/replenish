@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  item_id: 1
+  purchase_freq: 1.5
+  recent_purchase: 2015-06-30 14:27:53
+  total_purchases: 1
+  quantity: 1
+
+two:
+  user_id: 1
+  item_id: 1
+  purchase_freq: 1.5
+  recent_purchase: 2015-06-30 14:27:53
+  total_purchases: 1
+  quantity: 1

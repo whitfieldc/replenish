@@ -1,0 +1,311 @@
+body {
+  font-family: CabinRegular;
+  background: url("/assets/salmon.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+
+header {
+  height: 80px;
+}
+
+#index-nav-logo {
+  margin-top: 15px;
+  margin-left: 22.5px;
+  width: 30px;
+  height: 50px;
+  float: left;
+}
+
+#index-nav-title {
+  font-family: TheSoulOfVodka;
+  float: left;
+  color: white;
+  margin-left: 10px;
+  margin-top: 22.5px;
+  font-size: 26px;
+  font-weight: lighter;
+}
+
+#login-button {
+  margin-top: 22.5px;
+  margin-right: 22.5px;
+  padding: 0px;
+  height: 35px;
+  width: 175px;
+  float: right;
+  background-color: #DF4A32;
+  color: white;
+  border: none;
+  border-radius: 2.5px;
+}
+
+.login-google-icon {
+  top: 5px;
+  color: white;
+}
+
+.arrows-container {
+  clear: both;
+}
+
+#index-bowl {
+  display: none;
+}
+
+#index-onion {
+  display: none;
+}
+
+.arrow-left {
+  position: absolute;
+  left: 5%;
+  top: 45%;
+  color: white;
+}
+
+.arrow-right {
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  color: white;
+}
+
+.index-text {
+  color: white;
+  margin-top: 9%;
+  text-align: center;
+}
+
+.index-title {
+  font-family: TheSoulOfVodka;
+  font-size: 125px;
+  font-weight: lighter;
+  margin-bottom: 0px;
+}
+
+.index-subtitle {
+  margin-top: 0px;
+/*  background: #0e8dbc;*/
+  color: #F5F5F5;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb;
+               /*0 4px 0 #b9b9b9,*/
+               /*0 5px 0 #aaa,*/
+               /*0 6px 1px rgba(0,0,0,.1),*/
+               /*0 0 5px rgba(0,0,0,.1),*/
+               /*0 1px 3px rgba(0,0,0,.3);*/
+               /*0 3px 5px rgba(0,0,0,.2);*/
+               /*0 5px 10px rgba(0,0,0,.25),*/
+               /*0 10px 10px rgba(0,0,0,.2),*/
+               /*0 20px 20px rgba(0,0,0,.15);*/
+}
+
+.circles {
+  background-color: red;
+  border-radius: 100px;
+  margin-bottom: 40px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
+}
+
+.circles:hover {
+  background-color: black;
+}
+
+.social-icons {
+  height: 30px;
+  width: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  font-family: CabinRegular;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: 100;
+  font-size: 0.8em;
+  bottom: 0px;
+}
+
+#footer-text {
+  margin: 10px;
+}
+
+.list-view {
+  margin-top: 5%;
+  height: 55vh;
+  overflow-y: scroll;
+  margin-bottom: 10%;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px #BDBDBD;
+  border-style: solid;
+  border-top: 1px;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-left: 0px;
+  background-color: #FAFAFA;
+}
+
+.view-card-title {
+  font-size: 1.5em;
+  margin: 20px;
+  float: left;
+}
+
+.options-icon {
+  float: right;
+  margin: 30px;
+  font-size: 30px;
+}
+
+.item-cards-list {
+  clear: both;
+  margin: 0px 50px 2% 50px;
+}
+
+
+.item-card {
+  background-color: white;
+  border: solid 1px black;
+  height: 225px;
+  width: 175px;
+  float: left;
+  margin: 2.5% 2.74%;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 2px 2px 2px 2px #BDBDBD;
+  border-style: solid;
+  border-top: 1px;
+  border-right: 2px;
+  border-bottom: 2px;
+  border-left: 0px;
+}
+
+.card-category {
+  font-size: 11px;
+  position: absolute;
+  display: inline;
+}
+
+.card-category-icon {
+  float: left;
+  margin-left: 7px;
+  margin-top: 9px;
+  margin-right: 7px;
+}
+
+.card-category-text {
+  margin: 5px 0px 0px 0px;
+  float: left;
+}
+
+.card-title {
+  border-top: solid 1px #BDBDBD;
+  border-bottom: solid 1px #BDBDBD;
+  width: 100%;
+  margin: 0px;
+  text-align: center;
+  margin-top: 30px;
+  color: black;
+}
+
+.card-title-text {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 0px;
+  font-size: 18px;
+}
+
+.card-description {
+  margin: 0px;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.card-description-title {
+  margin: 0px;
+}
+
+.card-description-text {
+  margin: 0px;
+  width: 100%;
+  height: 30px;
+}
+
+.card-options {
+  position: absolute;
+  display: inline;
+  border-top: solid 1px #BDBDBD;
+  width: 95%;
+  padding-top: 5px;
+  padding-left: 5%;
+  top: 195px;
+}
+
+.card-options-icons {
+  float: left;
+}
+
+.checkbox-icon {
+  padding-top: 2px;
+  float: left;
+}
+
+.edit-icon {
+  margin-left: 32%;
+}
+
+.delete-icon {
+  padding-top: 2px;
+  padding-right: 7%;
+  float: right;
+}
+
+#card {
+  display: none;
+}
+
+#formDiv {
+  text-align: center;
+  margin-top: -4em;
+}
+
+#check-mark {
+  display: none;
+}
+
+
+
+
+
+
+
+/*
+.add-item-icon {
+  clear: both;
+  margin-left: 49%;
+  margin-bottom: 2%;
+  margin-top: 0px;
+}
+
+
+*//*
+
+
+header {
+  background-color: green;
+}
+
+footer {
+  background-color: green;
+}*/
