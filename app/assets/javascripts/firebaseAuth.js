@@ -3,13 +3,13 @@ $(document).ready(function(){
 
     e.preventDefault();
     console.log("prevent this shit");
-    bindForm();
-    bindUpdates();
-    bindDestruction();
 
     googleAuth().then(function(aData){
       $auth_id = aData.uid;
       $user_name = aData.google.displayName;
+      bindForm();
+      bindUpdates();
+      bindDestruction();
 
       $.ajax({
         type: "POST",
@@ -22,8 +22,9 @@ $(document).ready(function(){
         $("#index-bowl").empty()
         $("#index-onion").empty()
         $(".cycle-circles").empty()
-        $("#login-button").empty()
-        $("#login-button").css("background-color", "transparent")
+        // $("#login-button").empty()
+        // $("#login-button").css("background-color", "transparent")
+        $("#login-button").css('display', 'none')
         $("header").css("background-color", "#43A047")
         $("footer").css("background-color", "#43A047")
         // $("body").css("background-image", "url()")
