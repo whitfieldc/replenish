@@ -26,7 +26,8 @@ $(document).ready(function(){
         $("#login-button").css("background-color", "transparent")
         $("header").css("background-color", "#43A047")
         $("footer").css("background-color", "#43A047")
-        $("body").css("background-image", "url()")
+        // $("body").css("background-image", "url()")
+        $("body").css("background-color", "#ECEFF1")
       })
     })
   });

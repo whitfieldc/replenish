@@ -1,16 +1,16 @@
 $(document).on("page:change", function() {
-  circleOneClick();
-  circleTwoClick();
-  circleThreeClick();
-  // salmonToBowl();
-  // salmonToOnion();
-  // bowlToOnion();
-  // bowlToSalmon();
-  // onionToSalmon();
-  // onionToBowl();
-  flipCard();
-  completeItem();
-  undoCompleteItem();
+  // circleOneClick();
+  // circleTwoClick();
+  // circleThreeClick();
+  // // salmonToBowl();
+  // // salmonToOnion();
+  // // bowlToOnion();
+  // // bowlToSalmon();
+  // // onionToSalmon();
+  // // onionToBowl();
+  // flipCard();
+  // completeItem();
+  // undoCompleteItem();
 })
 
 var circleOneClick = function() {
