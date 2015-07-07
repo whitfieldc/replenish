@@ -1,38 +1,46 @@
 $(document).ready(function(){
+  if (localStorage['firebase:session::sdg']){
+    console.log('logging in with previous data')
+    var oldAuthData = JSON.parse(localStorage['firebase:session::sdg']);
+    ajaxLogin(oldAuthData);
+  }
   $('#login-button').on('click', function(e) {
 
     e.preventDefault();
     console.log("prevent this shit");
 
-    googleAuth().then(function(aData){
-      $auth_id = aData.uid;
-      $user_name = aData.google.displayName;
-      bindForm();
-      bindUpdates();
-      bindDestruction();
-
-      $.ajax({
-        type: "POST",
-        url: '/create',
-        data: { "auth_id": $auth_id, "name": $user_name },
-      }).done(function(resp){
-        $("#card").css("display", "block")
-        $("#card").append(resp)
-        $("#index-salmon").empty()
-        $("#index-bowl").empty()
-        $("#index-onion").empty()
-        $(".cycle-circles").empty()
-        // $("#login-button").empty()
-        // $("#login-button").css("background-color", "transparent")
-        $("#login-button").css('display', 'none')
-        $("header").css("background-color", "#43A047")
-        $("footer").css("background-color", "#43A047")
-        // $("body").css("background-image", "url()")
-        $("body").css("background-color", "#ECEFF1")
-      })
-    })
+    googleAuth().then(ajaxLogin)
   });
 })
+
+var ajaxLogin = function(aData){
+  $auth_id = aData.uid;
+  $user_name = aData.google.displayName;
+  bindForm();
+  bindUpdates();
+  bindDestruction();
+
+  $.ajax({
+    type: "POST",
+    url: '/create',
+    data: { "auth_id": $auth_id, "name": $user_name },
+  }).done(function(resp){
+    $("#card").css("display", "block")
+    $("#card").append(resp)
+    $("#index-salmon").empty()
+    $("#index-bowl").empty()
+    $("#index-onion").empty()
+    $(".cycle-circles").empty()
+    // $("#login-button").empty()
+    // $("#login-button").css("background-color", "transparent")
+    // this removes the login button but we should actually replace with logout
+    $("#login-button").css('display', 'none')
+    $("header").css("background-color", "#43A047")
+    $("footer").css("background-color", "#43A047")
+    // $("body").css("background-image", "url()")
+    $("body").css("background-color", "#ECEFF1")
+  })
+}
 
 var bindForm = function(){
   $(document).on('click', ':submit#addButton', function(e){
