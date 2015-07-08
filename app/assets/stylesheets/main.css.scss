@@ -62,17 +62,17 @@ textarea {
 
 @font-face {
     font-family: TheSoulOfVodka;
-    src: url("/assets/TheSoulOfVodka.ttf") format("truetype");
+    src: url(font-path('TheSoulOfVodka.ttf')) format("truetype");
 }
 
 @font-face {
     font-family: CabinRegular;
-    src: url("/assets/cabin/Cabin-Regular.ttf") format("truetype");
+    src: url(font-path('Cabin-Regular.ttf')) format("truetype");
 }
 
 @font-face {
     font-family: RalewayRegular;
-    src: url("/assets/raleway/Raleway-Regular.ttf") format("truetype");
+    src: url(font-path('Raleway-Regular.ttf')) format("truetype");
 }
 
 
