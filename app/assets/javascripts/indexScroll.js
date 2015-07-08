@@ -24,7 +24,7 @@ var circleOneClick = function() {
 
 var circleTwoClick = function() {
   $("#circle-2").on("click", function() {
-    $("body").css("background-image", "url('/assets/bowl.jpg')")
+    $("body").css("background-image", "url('bowl.jpg')")
     $("#index-salmon").css("display", "none")
     $("#index-bowl").css("display", "block")
     $("#index-onion").css("display", "none")
