@@ -1,9 +1,9 @@
 body {
-  font-family: CabinRegular;
-  /*background: url("/assets/salmon.jpg");*/
-  /*background-size: cover;*/
-  /*background-position: center;*/
-  background-color: #43A047;
+  /*font-family: CabinRegular;*/
+  background: url(asset_path('salmon.jpg'));
+  background-size: cover;
+  background-position: center;
+/*  background-color: #43A047; */
   width: 100%;
   height: 100vh;
 }
@@ -37,7 +37,7 @@ header {
   height: 35px;
   width: 175px;
   float: right;
-  background-color: #546E7A;
+  background: rgba(54,25,25,.5);
   color: white;
   border: none;
   border-radius: 2.5px;
@@ -78,6 +78,7 @@ header {
   color: white;
   margin-top: 9%;
   text-align: center;
+  background: rgba(54,25,25,.5);
 }
 
 .index-title {
