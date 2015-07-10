@@ -135,19 +135,19 @@ footer {
   margin-bottom: 10%;
   border-radius: 2px;
   position: relative;
-  box-shadow: 2px 2px 2px 2px #BDBDBD;
   border-style: solid;
   border-top: 1px;
   border-right: 2px;
   border-bottom: 2px;
   border-left: 0px;
-  background-color: #FAFAFA;
+  background: rgba(54,25,25,.5);
 }
 
 .view-card-title {
   font-size: 1.5em;
   margin: 20px;
   float: left;
+  color: white;
 }
 
 .options-icon {
