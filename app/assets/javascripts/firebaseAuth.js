@@ -46,7 +46,7 @@ var bindForm = function() {
 };
 
 var bindUpdates = function() {
-  $(document).on('click', '.checkbox-icon', function(e){
+  $(document).on('click', '.checkbox-icon', function(e) {
     e.preventDefault();
     var checkbox = $(e.target);
     var card = $(e.target).closest('.item-card');

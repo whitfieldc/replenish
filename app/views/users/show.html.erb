@@ -1,25 +1,22 @@
 <h2>Hi user, <%= @current_user.name %></h2>
 
 <h3>Plan a trip to the grocery store<br>
-  Current items on your list:</h3>
+Current items on your list:</h3>
 
 <% @current_items.each do |current_item| %>
+  Current Time:
+  <%= Time.now %><br>
+  Time of most recent purchase:
+  <%= current_item.recent_purchase %><br>
+  Average purchase frequency:
+  <%= current_item.purchase_freq %><br>
 
-Current Tim:
-<%= Time.now %><br>
-Time of most recent purchase:
-<%= current_item.recent_purchase %><br>
-Average purchase frequency:
-<%= current_item.purchase_freq %><br>
-
-<% if current_item.recent_purchase && current_item.purchase_freq %>
-<% if (Time.now - current_item.recent_purchase) > current_item.purchase_freq %>
-<%= current_item.item.name %><br>
+  <% if current_item.recent_purchase && current_item.purchase_freq %>
+    <% if (Time.now - current_item.recent_purchase) > current_item.purchase_freq %>
+      <%= current_item.item.name %><br>
+    <% end %>
+  <% end %>
 <% end %>
-<% end %>
-<% end %>
-
-
 
 Add item link to partial form for item search<br>
 

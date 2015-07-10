@@ -3,10 +3,10 @@
   <i class="fa fa-bars fa-lg options-icon"></i>
   <div class="item-cards-list">
     <% list.each do |item| %>
-    <% p 'LIST HERE' %>
-    <% p list %>
-    <% @item = item %>
-    <%= render "welcome/card_detail", locals: {item: @item} %>
+      <% p 'LIST HERE' %>
+      <% p list %>
+      <% @item = item %>
+      <%= render "welcome/card_detail", locals: {item: @item} %>
     <% end %>
   </div>
 </div>
