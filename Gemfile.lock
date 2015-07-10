@@ -185,7 +185,7 @@ DEPENDENCIES
   spring
   turbolinks
   uglifier (>= 1.3.0)
-  web-console (~> 2)
+  web-console (~> 2.2)
 
 BUNDLED WITH
    1.10.5
