@@ -3,7 +3,7 @@
 Replenish is a smart grocery list app - it automatically builds your grocery list based on what you've shopped for in the past.
 [replenish.herokuapp.com](https://replenish.herokuapp.com)
 
-![Replenish](https://github.com/whitfieldc/replenish/blob/master/replenish.png "Replenish")
+![Replenish](https://github.com/whitfieldc/replenish/blob/master/screenshots/replenish.png "Replenish")
 
 ###Tech Stack:
 Rails, Google OAuth (Firebase), Javascript, ActiveRecord, PostgreSQL, jQuery, HTML, CSS
